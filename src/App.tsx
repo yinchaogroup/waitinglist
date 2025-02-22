@@ -167,9 +167,9 @@ function App() {
                 required
               />
               <select 
-                name="MMERGE2" 
+                name="MERGE7" 
                 className="w-full px-4 py-3 rounded-lg"
-                id="mce-MMERGE2"
+                id="mce-MERGE7"
               >
                 <option value="">Select Your Style Preference</option>
                 <option value="casual">Casual</option>
