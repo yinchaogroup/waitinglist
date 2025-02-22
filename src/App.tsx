@@ -142,28 +142,49 @@ function App() {
               Sign up today for exclusive early access and updates. 
               Be part of the future of fashion!
             </p>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form 
+              action="https://gmail.us17.list-manage.com/subscribe/post?u=20fbce43bd1e62f77c10c84ed&amp;id=ab7a7778de&amp;f_id=0044c2e1f0" 
+              method="post" 
+              id="mc-embedded-subscribe-form" 
+              name="mc-embedded-subscribe-form" 
+              className="space-y-4"
+              target="_blank"
+            >
               <input
                 type="text"
+                name="FNAME"
+                id="mce-FNAME"
                 placeholder="Your Name"
                 className="w-full px-4 py-3 rounded-lg"
                 required
               />
               <input
                 type="email"
+                name="EMAIL"
+                id="mce-EMAIL"
                 placeholder="Your Email"
-                className="w-full px-4 py-3 rounded-lg"
+                className="w-full px-4 py-3 rounded-lg required email"
                 required
               />
-              <select className="w-full px-4 py-3 rounded-lg">
+              <select 
+                name="MMERGE2" 
+                className="w-full px-4 py-3 rounded-lg"
+                id="mce-MMERGE2"
+              >
                 <option value="">Select Your Style Preference</option>
                 <option value="casual">Casual</option>
                 <option value="professional">Professional</option>
                 <option value="trendy">Trendy</option>
                 <option value="minimalist">Minimalist</option>
               </select>
+              {/* Required for Mailchimp bot protection */}
+              <div aria-hidden="true" style={{ position: 'absolute', left: '-5000px' }}>
+                <input type="text" name="b_20fbce43bd1e62f77c10c84ed_ab7a7778de" tabIndex={-1} />
+              </div>
               <button
                 type="submit"
+                name="subscribe"
+                id="mc-embedded-subscribe"
                 className="w-full bg-white text-purple-600 px-8 py-4 rounded-lg text-lg 
                   font-semibold hover:bg-purple-50 transition-colors"
               >
@@ -200,7 +221,7 @@ function App() {
               <a href="#" className="hover:text-white transition-colors">Terms of Use</a>
               <a href="#" className="hover:text-white transition-colors">Contact Us</a>
             </div>
-            <p className="text-gray-400">© 2024 Spuntra. All rights reserved.</p>
+            <p className="text-gray-400"> 2024 Spuntra. All rights reserved.</p>
           </div>
         </div>
       </footer>
